@@ -6,7 +6,6 @@
 * with another client or server, using the lightweight wolfSSL API.
 */
 
-#include "wolfssl/options.h"
 #include "wolfssl/ssl.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,7 +20,7 @@
 * GLOBAL DATA
 */
 
-bool WolfSSLInitialized = false;
+static bool WolfSSLInitialized = false;
 
 /*
 * CODE
